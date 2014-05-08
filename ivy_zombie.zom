@@ -1,0 +1,30 @@
+test_human,1
+je,15; attack
+test_zombie,1
+je,9; rotate 
+test_zombie,2
+je,9; rotate
+test_passable
+je,19; random then forward
+test_random
+je,13; rotate 1
+rotate,0
+goto,1
+rotate,1
+goto,1
+attack
+goto,1
+forward
+goto,1
+test_random
+je,23
+forward
+goto,1
+test_random
+je,27
+forward
+goto,1
+test_random
+je,9
+forward
+goto,1

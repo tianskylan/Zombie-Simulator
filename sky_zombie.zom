@@ -1,0 +1,10 @@
+test_human,1
+je,5; attack
+test_random
+je, 7; jump to rotate 1
+rotate,0
+goto,1
+rotate,1
+goto,1
+attack
+goto,1

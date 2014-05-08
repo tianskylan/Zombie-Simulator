@@ -1,0 +1,21 @@
+test_zombie,2
+je,15; range attack zombie
+test_zombie,1
+je,17; turn around and escape
+test_human,2
+je,15; range attack human
+test_passable
+je,20; forward
+test_random
+je,13; rotate 1
+rotate,0
+goto,1
+rotate,1
+goto,1
+ranged_attack
+goto,1
+rotate,0
+rotate,0
+goto,1
+forward
+goto,1
